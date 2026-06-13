@@ -298,6 +298,7 @@ Live deployed system accessible via public URLs:
 
 | Artifact | Location |
 |---|---|
+| Requirements Specification | [REQUIREMENTS.md](REQUIREMENTS.md) (functional + non-functional, traced to sprints) |
 | Product Backlog | GitHub Issues (10 user stories) |
 | Sprint Backlogs | This README (tasks per sprint) |
 | Sprint Review notes | This README (outcomes per sprint) |
