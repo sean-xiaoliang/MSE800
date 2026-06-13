@@ -9,13 +9,7 @@ from typing import Optional
 
 
 @dataclass
-class User:  # pylint: disable=too-many-instance-attributes
-    """A registered user account.
-
-    A plain data container; the extra attributes are intentional fields
-    (profile info + password-reset state), so the attribute count is fine.
-    """
-
+class User:
     email: str                            # login identifier + simulated inbox
     username: str                         # display name
     full_name: str                        # full name (personal info)

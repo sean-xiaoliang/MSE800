@@ -6,6 +6,7 @@ any of this is implemented internally.
 """
 
 from datetime import datetime, timedelta
+from typing import Optional
 
 import security
 import storage
