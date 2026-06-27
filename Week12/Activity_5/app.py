@@ -17,10 +17,16 @@ PAGE = """
 def bmi():
     result = ""
     if request.method == "POST":
-        weight = float(request.form["weight"])
-        height = float(request.form["height"])
-        bmi = weight / height ** 2
-        result = "Your BMI is {:.2f}".format(bmi)
+        try:
+            weight = float(request.form["weight"])
+            height = float(request.form["height"])
+            if weight <= 0 or height <= 0:
+                result = "Please enter positive numbers."
+            else:
+                bmi = weight / height ** 2
+                result = "Your BMI is {:.2f}".format(bmi)
+        except ValueError:
+            result = "Please enter valid numbers."
     return PAGE.format(result=result)
 
 
