@@ -1,0 +1,18 @@
+"""Hello Django - single-file demo.  Run: python app.py runserver"""
+import sys
+from django.conf import settings
+from django.core.management import execute_from_command_line
+from django.http import HttpResponse
+from django.urls import path
+
+settings.configure(DEBUG=True, ROOT_URLCONF=__name__, ALLOWED_HOSTS=["*"])
+
+
+def home(request, username):
+    return HttpResponse(f"Welcome {username} to Django!")
+
+
+urlpatterns = [path("<str:username>/", home)]
+
+if __name__ == "__main__":
+    execute_from_command_line(sys.argv)

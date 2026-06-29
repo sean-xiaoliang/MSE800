@@ -1,36 +1,36 @@
 # 汽车租赁系统依赖
-# Python >= 3.10
+# Python >= 3.10（已在 Python 3.14.5 上验证）
 
 # Web 框架
-Flask==3.0.3
-Werkzeug==3.0.3
+Flask==3.1.3
+Werkzeug==3.1.8
 
 # 数据库
-SQLAlchemy==2.0.30
-alembic==1.13.1
+SQLAlchemy==2.0.51
+alembic==1.18.5
 
 # 表单验证
-WTForms==3.1.2
-Flask-WTF==1.2.1
+WTForms==3.2.2
+Flask-WTF==1.3.0
 
 # 安全
-bcrypt==4.1.3
-PyJWT==2.8.0
+bcrypt==5.0.0
+PyJWT==2.13.0
 
 # 环境配置
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 
 # 测试
-pytest==8.2.2
+pytest==9.1.1
 pytest-flask==1.3.0
-pytest-cov==5.0.0
+pytest-cov==7.1.0
 
 # 代码质量（可选）
-black==24.4.2
-flake8==7.0.0
-mypy==1.10.0
+black==26.5.1
+flake8==7.3.0
+mypy==2.2.0
 
 # 未来扩展（IoT/ML）
 # paho-mqtt==2.1.0      # MQTT 客户端
-# scikit-learn==1.5.0   # 机器学习
-# numpy==1.26.4         # 数值计算
+# scikit-learn==1.9.0   # 机器学习
+# numpy==2.5.1          # 数值计算
