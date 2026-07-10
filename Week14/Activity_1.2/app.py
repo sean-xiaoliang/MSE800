@@ -8,11 +8,11 @@ from django.urls import path
 settings.configure(DEBUG=True, ROOT_URLCONF=__name__, ALLOWED_HOSTS=["*"])
 
 
-def home(request, username):
-    return HttpResponse(f"Welcome {username} to Django!")
+def home(request):
+    return HttpResponse("hello Django")
 
 
-urlpatterns = [path("<str:username>/", home)]
+urlpatterns = [path("", home)]
 
 if __name__ == "__main__":
     execute_from_command_line(sys.argv)
